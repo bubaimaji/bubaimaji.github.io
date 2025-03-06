@@ -104,10 +104,10 @@ ul li a:hover {
         border-bottom: 1px solid #ddd;
     }
 
-    .main-content {
-        margin-left: 0;
-        padding: 20px;
-    }
+  .main-content {
+    padding-left: 30px; /* Adds space to the left */
+}
+
 
     .nav-links {
         text-align: center;
