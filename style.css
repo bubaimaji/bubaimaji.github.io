@@ -73,12 +73,16 @@ h2 {
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0; /* Align items properly */
 }
 
-ul li {
-    margin-bottom: 8px;
+ul li::before {
+    content: "\2022"; /* Unicode for a bullet point (●) */
+    color: black; /* Bullet color */
+    display: inline-block; 
+    width: 1em; /* Space for bullet */
+    margin-left: -1em; /* Align bullet correctly */
 }
 
 ul li a {
