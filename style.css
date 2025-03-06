@@ -15,87 +15,42 @@ body {
     border-right: 1px solid #ddd;
 }
 
-.profile-img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    display: block;
-    margin: 0 auto 15px;
-}
-
-.sidebar h2 {
-    text-align: center;
-    font-size: 22px;
-    margin-bottom: 5px;
-}
-
-.sidebar p {
-    text-align: center;
-    font-size: 14px;
-    color: #666;
-}
-
-.sidebar .btn {
-    display: block;
-    margin: 10px auto;
-    text-align: center;
-}
-
-/* Social Icons */
-.social-icons {
-    text-align: center;
-}
-
-.social-icons a {
-    margin: 5px;
-    font-size: 18px;
-    color: #333;
-    text-decoration: none;
-}
-
-/* Main Content Area */
+/* Main Content Spacing - Equal Left & Right Margins */
 .main-content {
-    margin-left: 320px; /* Creates left-side space */
-    padding: 40px 60px; /* Top-Bottom, Left-Right Padding */
+    margin-left: 320px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
-/* Navigation Bar */
-.nav-links {
-    text-align: right;
+/* Bullet Styling (Apply Only to Lists Inside Sections) */
+section ul {
+    list-style-type: none;
+    padding-left: 20px;
 }
 
-.nav-links a {
-    margin-right: 15px;
-    text-decoration: none;
-    color: #007bff;
+section ul li::before {
+    content: "\2022"; /* Unicode for bullet */
     font-weight: bold;
+    color: black;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
 }
 
-h2 {
-    font-size: 22px;
-    color: #333;
-    margin-top: 20px;
+/* Remove Bullets from Lists Directly Under Headings */
+h2 + ul {
+    list-style-type: none !important;
+    padding-left: 0 !important;
 }
 
-/* Bullet Points */
-ul {
-    list-style-type: none; /* Remove default bullets */
-    padding-left: 0; /* Align items properly */
+h2 + ul li::before {
+    content: none !important;
 }
 
+/* Ensure Proper List Formatting */
 ul li {
-    position: relative;
-    padding-left: 20px; /* Adjust space for bullets */
-    margin-bottom: 8px; /* Add spacing between items */
-}
-
-ul li::before {
-    content: "\2022"; /* Unicode for a bullet point (●) */
-    color: black; /* Bullet color */
-    position: absolute;
-    left: 0;
-    top: 0;
-    font-size: 16px;
+    margin-bottom: 8px;
+    line-height: 1.6;
 }
 
 /* Links */
@@ -111,7 +66,7 @@ ul li a:hover {
 /* Responsive Design */
 @media (max-width: 1024px) {
     .main-content {
-        margin-left: 300px; /* Slightly reduce space on tablets */
+        margin-left: 300px;
         padding: 20px;
     }
 }
@@ -128,11 +83,6 @@ ul li a:hover {
 
     .main-content {
         margin-left: 0;
-        padding: 20px; /* Adjust padding for smaller screens */
-    }
-
-    .nav-links {
-        text-align: center;
-        margin-top: 10px;
+        padding: 20px;
     }
 }
