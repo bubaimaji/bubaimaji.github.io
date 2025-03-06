@@ -68,7 +68,7 @@ body {
 
 /* Main Content Styling */
 .main-content {
-    margin-left: 350px; /* Adjust margin to account for sidebar width + left padding */
+    margin-left: 330px; /* Adjust margin to account for sidebar width + left padding */
     padding: 20px;
 }
 
