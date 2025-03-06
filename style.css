@@ -15,42 +15,87 @@ body {
     border-right: 1px solid #ddd;
 }
 
-/* Main Content Spacing - Equal Left & Right Margins */
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.sidebar p {
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+.sidebar .btn {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
+
+/* Social Icons */
+.social-icons {
+    text-align: center;
+}
+
+.social-icons a {
+    margin: 5px;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Main Content Area */
 .main-content {
-    margin-left: 320px;
-    padding-left: 5%;
-    padding-right: 5%;
+    margin-left: 320px; /* Creates left-side space */
+    padding: 40px 60px; /* Top-Bottom, Left-Right Padding */
 }
 
-/* Bullet Styling (Apply Only to Lists Inside Sections) */
-section ul {
-    list-style-type: none;
-    padding-left: 20px;
+/* Navigation Bar */
+.nav-links {
+    text-align: right;
 }
 
-section ul li::before {
-    content: "\2022"; /* Unicode for bullet */
+.nav-links a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #007bff;
     font-weight: bold;
-    color: black;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
 }
 
-/* Remove Bullets from Lists Directly Under Headings */
-h2 + ul {
-    list-style-type: none !important;
-    padding-left: 0 !important;
+h2 {
+    font-size: 22px;
+    color: #333;
+    margin-top: 20px;
 }
 
-h2 + ul li::before {
-    content: none !important;
+/* Bullet Points */
+ul {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0; /* Align items properly */
 }
 
-/* Ensure Proper List Formatting */
 ul li {
-    margin-bottom: 8px;
-    line-height: 1.6;
+    position: relative;
+    padding-left: 20px; /* Adjust space for bullets */
+    margin-bottom: 8px; /* Add spacing between items */
+}
+
+ul li::before {
+    content: "\2022"; /* Unicode for a bullet point (●) */
+    color: black; /* Bullet color */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 16px;
 }
 
 /* Links */
@@ -66,7 +111,7 @@ ul li a:hover {
 /* Responsive Design */
 @media (max-width: 1024px) {
     .main-content {
-        margin-left: 300px;
+        margin-left: 300px; /* Slightly reduce space on tablets */
         padding: 20px;
     }
 }
@@ -83,6 +128,11 @@ ul li a:hover {
 
     .main-content {
         margin-left: 0;
-        padding: 20px;
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .nav-links {
+        text-align: center;
+        margin-top: 10px;
     }
 }
