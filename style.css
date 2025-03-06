@@ -1,8 +1,10 @@
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
 }
 
+/* Sidebar Styling */
 .sidebar {
     background: white;
     height: 100vh;
@@ -39,6 +41,7 @@ body {
     text-align: center;
 }
 
+/* Social Icons */
 .social-icons {
     text-align: center;
 }
@@ -50,11 +53,13 @@ body {
     text-decoration: none;
 }
 
+/* Main Content Area */
 .main-content {
-    margin-left: 300px;
-    padding: 20px;
+    margin-left: 320px; /* Creates left-side space */
+    padding: 40px 60px; /* Top-Bottom, Left-Right Padding */
 }
 
+/* Navigation Bar */
 .nav-links {
     text-align: right;
 }
@@ -67,24 +72,33 @@ body {
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 22px;
     color: #333;
     margin-top: 20px;
 }
 
+/* Bullet Points */
 ul {
     list-style-type: none; /* Remove default bullets */
     padding-left: 0; /* Align items properly */
 }
 
+ul li {
+    position: relative;
+    padding-left: 20px; /* Adjust space for bullets */
+    margin-bottom: 8px; /* Add spacing between items */
+}
+
 ul li::before {
     content: "\2022"; /* Unicode for a bullet point (●) */
     color: black; /* Bullet color */
-    display: inline-block; 
-    width: 1em; /* Space for bullet */
-    margin-left: -1em; /* Align bullet correctly */
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 16px;
 }
 
+/* Links */
 ul li a {
     color: #007bff;
     text-decoration: none;
@@ -92,6 +106,14 @@ ul li a {
 
 ul li a:hover {
     text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .main-content {
+        margin-left: 300px; /* Slightly reduce space on tablets */
+        padding: 20px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -104,10 +126,10 @@ ul li a:hover {
         border-bottom: 1px solid #ddd;
     }
 
-  .main-content {
-    padding-left: 30px; /* Adds space to the left */
-}
-
+    .main-content {
+        margin-left: 0;
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
 
     .nav-links {
         text-align: center;
