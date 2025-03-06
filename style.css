@@ -1,6 +1,8 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
 }
 
 /* Sidebar Styling */
@@ -12,6 +14,7 @@ body {
     padding: 20px;
     overflow-y: auto;
     border-right: 1px solid #ddd;
+    left: 50px; /* Add left padding before the sidebar */
 }
 
 .profile-img {
@@ -65,7 +68,7 @@ body {
 
 /* Main Content Styling */
 .main-content {
-    margin-left: 300px;
+    margin-left: 350px; /* Adjust margin to account for sidebar width + left padding */
     padding: 20px;
 }
 
@@ -125,6 +128,7 @@ html {
         padding-bottom: 20px;
         border-right: none;
         border-bottom: 1px solid #ddd;
+        left: 0; /* Reset left padding for smaller screens */
     }
 
     .main-content {
