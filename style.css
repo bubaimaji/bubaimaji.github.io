@@ -78,15 +78,29 @@ h2 {
 }
 
 /* Bullet Points */
-ul {
-    list-style-type: none; /* Remove default bullets */
-    padding-left: 0; /* Align items properly */
+/* Apply bullets only to list items inside content sections */
+section ul {
+    list-style-type: none;
+    padding-left: 20px; /* Adjust spacing */
 }
 
-ul li {
-    position: relative;
-    padding-left: 20px; /* Adjust space for bullets */
-    margin-bottom: 8px; /* Add spacing between items */
+section ul li::before {
+    content: "\2022"; /* Unicode bullet */
+    font-weight: bold;
+    color: black;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Prevent bullets from appearing in heading sections */
+h2 + ul {
+    list-style-type: none !important;
+}
+
+h2 + ul li::before {
+    content: none !important;
+}
 }
 
 ul li::before {
