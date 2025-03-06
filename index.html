@@ -3,89 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bubaim Aji - Academic Profile</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Bubaim - Academic Profile</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="col-md-3 col-lg-2 d-md-block sidebar bg-light p-3">
+                <div class="position-sticky text-center">
+                    <img src="profile.jpg" alt="Profile Picture" class="profile-img">
+                    <h2 class="mt-2">Bubaim</h2>
+                    <p>Ph.D. Candidate in Speech Processing</p>
+                    <a href="#" class="btn btn-primary btn-sm">Curriculum Vitae</a>
+                    <div class="social-icons mt-3">
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-google-scholar"></i></a>
+                    </div>
+                </div>
+            </nav>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand" href="#">Bubaim Aji</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#">About Me</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Publications</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Education</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-            </ul>
+            <!-- Main Content -->
+            <main class="col-md-9 col-lg-10 px-md-4">
+                <header class="d-flex justify-content-between py-3 border-bottom align-items-center">
+                    <h1>Homepage</h1>
+                    <nav class="nav-links">
+                        <a href="#">About Me</a>
+                        <a href="#">News</a>
+                        <a href="#">Publications</a>
+                        <a href="#">Education</a>
+                    </nav>
+                </header>
+                
+                <!-- News Section -->
+                <section class="news mt-4">
+                    <h2>🔥 News</h2>
+                    <ul>
+                        <li><strong>2024.08:</strong> Released training <a href="#">codes</a> for speech translation.</li>
+                        <li><strong>2024.05:</strong> Speech-to-text paper accepted at ACL 2024.</li>
+                        <li><strong>2023.12:</strong> Accent conversion research accepted at ICASSP 2024.</li>
+                    </ul>
+                </section>
+                
+                <!-- Education Section -->
+                <section class="education mt-4">
+                    <h2>🎓 Education</h2>
+                    <ul>
+                        <li><strong>2022 - Present:</strong> Ph.D. in Speech Processing</li>
+                        <li><strong>2017 - 2020:</strong> M.E. in AI & Machine Learning</li>
+                        <li><strong>2013 - 2017:</strong> B.E. in Computer Science</li>
+                    </ul>
+                </section>
+                
+                <!-- Publications Section -->
+                <section class="publications mt-4">
+                    <h2>📚 Publications</h2>
+                    <ul>
+                        <li>Bubaim et al. "<a href="#">Fairness in Speech Processing: ASR Bias in Multilingual Systems</a>" (ACL 2024)</li>
+                        <li>Bubaim et al. "<a href="#">Emotion Recognition from Speech using Deep Learning</a>" (ICASSP 2024)</li>
+                        <li>Bubaim et al. "<a href="#">Robust Speech Processing with Spectral Decoupling</a>" (SLT 2024)</li>
+                    </ul>
+                </section>
+            </main>
         </div>
     </div>
-</nav>
 
-<!-- Hero Section -->
-<header class="hero">
-    <div class="container text-center">
-        <img src="profile.jpg" alt="Profile Picture" class="profile-img">
-        <h1>Bubaim Aji</h1>
-        <p>Ph.D. Candidate in Speech Processing & AI Research</p>
-        <div class="social-icons">
-            <a href="#"><i class="fas fa-envelope"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-google-scholar"></i></a>
-        </div>
-    </div>
-</header>
-
-<!-- About Section -->
-<section class="container about">
-    <h2>About Me</h2>
-    <p>
-        I am a Ph.D. researcher specializing in speech processing, fairness in ASR, and emotion recognition from speech. My research involves using Whisper models, Seamless models, and VoxPopuli datasets.
-    </p>
-</section>
-
-<!-- News Section -->
-<section class="container news">
-    <h2>🔥 News</h2>
-    <ul>
-        <li><strong>2024.08:</strong> Released training <a href="#">codes</a> for speech translation.</li>
-        <li><strong>2024.05:</strong> Speech-to-text paper accepted at ACL 2024.</li>
-        <li><strong>2023.12:</strong> Accent conversion research accepted at ICASSP 2024.</li>
-    </ul>
-</section>
-
-<!-- Education Section -->
-<section class="container education">
-    <h2>🎓 Education</h2>
-    <ul>
-        <li><strong>2022 - Present:</strong> Ph.D. in Speech Processing</li>
-        <li><strong>2017 - 2020:</strong> M.E. in AI & Machine Learning</li>
-        <li><strong>2013 - 2017:</strong> B.E. in Computer Science</li>
-    </ul>
-</section>
-
-<!-- Publications Section -->
-<section class="container publications">
-    <h2>📚 Publications</h2>
-    <ul>
-        <li>Bubaim Aji et al. "<a href="#">Fairness in Speech Processing: ASR Bias in Multilingual Systems</a>" (ACL 2024)</li>
-        <li>Bubaim Aji et al. "<a href="#">Emotion Recognition from Speech using Deep Learning</a>" (ICASSP 2024)</li>
-        <li>Bubaim Aji et al. "<a href="#">Robust Speech Processing with Spectral Decoupling</a>" (SLT 2024)</li>
-    </ul>
-</section>
-
-<!-- Footer -->
-<footer class="footer text-center">
-    <p>&copy; 2024 Bubaim Aji | Built with 💙 using GitHub Pages</p>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
