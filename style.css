@@ -5,16 +5,24 @@ body {
     padding: 0;
 }
 
+/* Wrapper to center the whole layout */
+.container {
+    max-width: 1100px; /* Adjust this value as needed */
+    margin: 0 auto; /* Centers the content */
+    display: flex;
+    align-items: flex-start;
+}
+
 /* Sidebar Styling */
 .sidebar {
     background: white;
     height: 100vh;
-    position: fixed;
     width: 280px;
     padding: 20px;
     overflow-y: auto;
     border-right: 1px solid #ddd;
-    left: 50px; /* Add left padding before the sidebar */
+    position: sticky;
+    top: 0; /* Keeps sidebar fixed while scrolling */
 }
 
 .profile-img {
@@ -35,12 +43,6 @@ body {
     text-align: center;
     font-size: 14px;
     color: #666;
-}
-
-.sidebar .btn {
-    display: block;
-    margin: 10px auto;
-    text-align: center;
 }
 
 .contact-info {
@@ -68,8 +70,9 @@ body {
 
 /* Main Content Styling */
 .main-content {
-    margin-left: 330px; /* Adjust margin to account for sidebar width + left padding */
+    flex: 1;
     padding: 20px;
+    max-width: 800px; /* Adjust based on desired content width */
 }
 
 .nav-links {
@@ -120,19 +123,22 @@ html {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .sidebar {
-        position: relative;
         width: 100%;
         height: auto;
-        padding-bottom: 20px;
+        position: relative;
         border-right: none;
         border-bottom: 1px solid #ddd;
-        left: 0; /* Reset left padding for smaller screens */
     }
 
     .main-content {
-        margin-left: 0;
+        max-width: 100%;
         padding: 20px;
     }
 
