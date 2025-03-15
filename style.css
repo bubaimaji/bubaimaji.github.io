@@ -42,18 +42,26 @@ body {
 .sidebar p {
     text-align: center;
     font-size: 14px;
-    color: #007bff;
+    color: #000000; /* Black text */
 }
 
-.contact-info {
-    text-align: center;
-    margin-top: 15px;
+.contact-info a {
+    color: #000000 !important; /* Black color for links */
+    text-decoration: none;
+    font-size: 16px; /* Adjust size if needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px; /* Space between icon and text */
 }
 
-.contact-info p {
-    font-size: 14px;
-    color: #007bff;
-    margin: 5px 0;
+.contact-info a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.contact-info i {
+    color: #000000 !important; /* Black icons */
+    font-size: 18px; /* Adjust icon size */
 }
 
 .social-icons {
