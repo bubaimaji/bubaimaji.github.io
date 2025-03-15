@@ -13,17 +13,29 @@ body {
     align-items: flex-start;
 }
 
-/* Sidebar Styling */
-.sidebar {
-    background: white;
-    height: 100vh;
-    width: 280px;
-    padding: 20px;
-    overflow-y: auto;
-    border-right: 1px solid #ddd;
-    position: sticky;
-    top: 0; /* Keeps sidebar fixed while scrolling */
+/* Ensure all links and icons in the sidebar appear black */
+.sidebar a {
+    color: #000000 !important; /* Force black color */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Adjust font size if needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px; /* Space between icon and text */
+    margin: 5px 0;
 }
+
+/* Hover effect for better interaction */
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+/* Force icons to be black */
+.sidebar i {
+    color: #000000 !important; /* Force black color */
+    font-size: 18px; /* Adjust icon size */
+}
+
 
 .profile-img {
     width: 120px;
