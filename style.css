@@ -45,25 +45,36 @@ body {
     color: #000000; /* Black text */
 }
 
+/* Contact Info Styling */
+.contact-info {
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Ensure all links in the contact-info section (Curriculum Vitae, Email, GitHub, Google Scholar) are black */
 .contact-info a {
-    color: #000000 !important; /* Black color for links */
+    color: #000000 !important; /* Black text for links */
     text-decoration: none;
-    font-size: 16px; /* Adjust size if needed */
+    font-size: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px; /* Space between icon and text */
+    margin: 5px 0;
 }
 
+/* Hover effect to keep consistency */
 .contact-info a:hover {
-    text-decoration: underline; /* Underline on hover */
+    text-decoration: underline;
 }
 
+/* Make icons in the contact-info section black */
 .contact-info i {
     color: #000000 !important; /* Black icons */
-    font-size: 18px; /* Adjust icon size */
+    font-size: 18px;
 }
 
+/* Social Icons */
 .social-icons {
     text-align: center;
     margin-top: 10px;
@@ -72,7 +83,7 @@ body {
 .social-icons a {
     margin: 5px;
     font-size: 18px;
-    color: #343a40;
+    color: #000000 !important; /* Black social icons */
     text-decoration: none;
 }
 
@@ -116,8 +127,9 @@ ul li {
     margin-bottom: 8px;
 }
 
+/* Ensure links inside lists are black */
 ul li a {
-    color: #007bff;
+    color: #000000 !important; /* Black links */
     text-decoration: none;
 }
 
