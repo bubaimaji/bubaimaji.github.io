@@ -52,7 +52,7 @@ body {
 
 .contact-info p {
     font-size: 14px;
-    color: #555;
+    color: #000000;
     margin: 5px 0;
 }
 
@@ -94,7 +94,7 @@ body {
 /* Section Headings */
 h2 {
     font-size: 20px;
-    color: #333;
+    color: #343a40;
     margin-top: 20px;
 }
 
