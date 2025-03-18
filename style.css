@@ -141,7 +141,7 @@ ul li {
 
 /* Ensure links inside lists are black */
 ul li a {
-    color: #000000 !important; /* Black links */
+    color:  #343a40 !important; /* Black links */
     text-decoration: none;
 }
 
